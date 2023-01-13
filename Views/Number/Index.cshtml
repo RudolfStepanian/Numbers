@@ -1,0 +1,17 @@
+﻿@Model NumberConverterModel
+<script src="/lib/jquery/dist/jquery.min.js"></script>
+
+<form id="numberConverterForm" asp-action="Get" asp-controller="number">
+    <div class="form-group">
+        <label>Number</label>
+        <input type="number" name="Number" id="number" class="form-control" step="0.01" />
+    </div>
+    <input type="submit" value="Get text" class="form-control" />
+</form>
+
+<div id="res">
+    <label for="result">Result:</label>
+    <div id="result"></div>
+</div>
+
+<script src="~/js/number.js"></script>
